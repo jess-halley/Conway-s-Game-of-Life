@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="conway.css">
+  </head>
+
+  <body>
+
+  <div id = "header">
+    <h1>Conway's Game of Life.</h1>
+    <h2> Designed by Jess. </h2>
+  </div>
+
+
+    <div>
+      <hr />
+    </div>
+
+  <div>
+    <p>Science is my big passion,
+      so for my creative JavaScript challenge, I wanted to recreate the conditions for cellular simulation originally established by mathematician John Horton Conway.
+      This model is commonly known as Conway's Game of Life. The conditions are surprisingly simple.
+    </p>
+  </div>
+
+  <div>
+    <p1> 1. Any live cell with fewer than two live neighbours dies as if caused by underpopulation. </p1>
+    <p1> 2. Any live cell with two or three live neighbours lives on to the next generation. </p1>
+    <p1> 3. Any live cell with more than three live neighbours dies, as if by overpopulation. </p1>
+    <p1> 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</p1>
+  </div>
+
+    <div>
+      <p> Using JavaScript you can write a program that responds to these rules. The end result is the beautiful cellular automaton you'll see when you click the start button below.
+        This is a digital representation of what cells do under the microscope.
+        It is possible to create a more interactive game out of these conditions whereby the user must work out the best route to creating life,
+        but unfortunately, I'm not clever enough for that yet.
+      </p>
+    </div>
+
+
+
+    <div>
+      <table id="board"></table>
+    </div>
+
+    <div>
+      <hr />
+    </div>
+
+    <div><button class="button" onclick="startStop('start')">start</button></div>
+    <div><button class="button" onclick="startStop('stop')">stop</button></div>
+
+    <script src="conway.js"></script>
+
+  </body>
+</html>
